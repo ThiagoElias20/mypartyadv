@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="src/img/coroa.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <title>Login/ My Party</title>
+</head>
+<body>
+    <header>    
+        <div class="container">
+            <div class="header-left">
+                <div class="logo">
+                    <a href="home.html"><img src="src/img/logo-sem-pessoas.png" alt="" /></a>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <ul class="ul-menu">
+                            <li><a href="home.html">Eventos</a></li>
+                            <li><a href="#">Organize</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header-right">
+                    <button class="but-ent">Entrar</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="container">
+                <div class="conteudo-formulario">
+                    <div class="formulario">
+                        <label for="input-email">
+                            <h1>Acesse sua Conta</h1>
+                        </label>
+                        <form action="#" class="info-formulario">
+                            <input type="email" id="input-email" required autofocus placeholder="E-mail">
+                            <input type="password" required minlength="5" placeholder="Senha">
+                            <div class="esqueci-senha">
+                                <p>Esqueci Minha Senha</p>
+                            </div>
+                            <input type="submit" value="Entrar">
+                            <button type="submit" id="button-google"><i id="icon-google" class="fa-brands fa-google"></i> Entrar Com Google</button>
+                            <div class="form-cadastre-se">
+                                <p>Não possui conta? <a href="">Cadastre-se</a></p>
+                            </div>
+                        </form>                    
+                    </div>
+                </div>
+                <div class="conteudo-slide">
+                    <div class="local-slides">
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="src/img/rave-dj.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="src/img/rave1.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="src/img/rave2.jpg" alt=""></div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                        
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        
+                        </div>
+                    </div> 
+                    <div class="sliders-pointers">
+                        <div class="pointer active"></div>
+                        <div class="pointer"></div>
+                        <div class="pointer"></div>
+                        <div class="pointer"></div>
+                        <div class="pointer"></div>
+                    </div>
+                    <div class="area-button-slides">
+                        <button class="button-slide">Saiba Mais</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    
+
+    
+</body>
+    <script src="https://kit.fontawesome.com/c12695f68e.js" crossorigin="anonymous"></script>
+    <!-- slide -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- slide -->
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable:true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                },
+            });
+    </script>
+</html>
